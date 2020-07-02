@@ -20,6 +20,10 @@ module.exports = {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: `Books`,
+            slug: `/books`,
+          }
         ],
         externalLinks: [
           {
@@ -32,6 +36,13 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `books`,
+        path: `content/books`
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
